@@ -29,6 +29,7 @@ namespace Sandbox
             SafePrintBookInformation(theCatalog.LookupBook("PT1295"));
             SafePrintBookInformation(theCatalog.LookupBook("......"));
             SafePrintBookInformation(theCatalog.LookupBook("ad1337"));
+            SafePrintBookInformation(theCatalog.LookupBook("AD1337"));
 
 
 
