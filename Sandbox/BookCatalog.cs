@@ -18,7 +18,27 @@ namespace Sandbox
         public void AddBook(Book aBook)
         {
             // Add code that can add the given Book object to the list
-            books.Add(aBook);
+
+
+            bool erBogDer = false;
+
+            foreach (var checkListe in books)
+            {
+                if (aBook.GetISBN() == checkListe.GetISBN())
+                {
+                    erBogDer = true;
+                }
+
+            }
+            if (erBogDer == true)
+            {
+                Console.WriteLine($"Bogen findes allerede: {aBook.GetAllInformation()}");
+            }
+            else
+            {
+                books.Add(aBook);
+            }
+
         }
 
         public void PrintAllBooks()
